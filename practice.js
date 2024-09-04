@@ -53,7 +53,7 @@ console.log("Last Element=",lastElement());
     console.log("sum of array=",sum);
 
  }
- console.log(sum());
+ sum();
 
  function product()
  {
@@ -65,7 +65,7 @@ console.log("Last Element=",lastElement());
     }
     console.log("product=",product1);
  }
- console.log(product());
+ product();
 
  function individual_sum()
 
@@ -79,7 +79,8 @@ console.log("Last Element=",lastElement());
         console.log(sum);
     }
 
- }console.log(individual_sum());
+ }
+ individual_sum();
 
 
  var str1="thon";
@@ -94,7 +95,44 @@ console.log("Last Element=",lastElement());
            console.log("py"+"",str1);
         }
  
+var str2="Hello world";
+function removeString()
+{
+    let res;
+    res=str2.replace("w","");
+    console.log(res);
+}
+removeString();
 
+var str3="HAMZA";
 
+function swap(str)
+{
+    if(str.length<=1)
+    {
+        return str;
+    }
+   
+        const first=str.charAt(0);
+        const last=str.charAt(str.length-1);
+        const middle=str.slice(1,str.length-1);
+        return last+middle+first;
 
+    
+}
+console.log(swap(str3));
+
+var str4="ANAS";
+var str5="HAMZA";
+function addFrontBack(str,str_1)
+{
+    if(str.length<=1)
+    {
+        return str;
+    }
+    
+    const First=str.charAt(0);
+    return First+str_1+First;
+
+} console.log(addFrontBack(str4,str5));
  
